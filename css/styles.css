@@ -62,8 +62,14 @@ hr{
 .related a{
 	text-decoration: none;
 }
-.related a:hover{
+.related a:hover {
 	text-decoration: underline;
+}
+
+.related .content {
+	color: #000;
+	text-decoration: none;
+	padding-left: 10px;
 }
 
 h1, h2, h3, h4{
@@ -219,11 +225,6 @@ h1{
   color: #444;
 }
 
-#post .content {
-	color: #000;
-	text-decoration: none;
-	padding-left: 10px;
-}
 
 #post blockquote cite:before { 
   content: 'Ñ ';
