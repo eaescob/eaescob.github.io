@@ -1,0 +1,5 @@
+safe: true
+source: eaescob.github.com
+destination: eaescob.github.com
+lsi: false
+pygments: true
