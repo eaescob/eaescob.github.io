@@ -200,7 +200,7 @@ h1{
 #post .authoring a{
   color: #777;
   text-decoration: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   padding: 0;
 }
 
@@ -216,6 +216,11 @@ h1{
   padding: 1em 3em;
   margin: 2em 6em;
   color: #444;
+}
+
+#post .content {
+	color: 000;
+	text-decoration: none;
 }
 
 #post blockquote cite:before { 
