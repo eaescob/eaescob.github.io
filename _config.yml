@@ -1,5 +1,6 @@
-safe: true
-source: eaescob.github.com
-destination: eaescob.github.com
-lsi: false
+markdown: rdiscount
 pygments: true
+permalink: /blog/:title
+auto: true
+rdiscount:
+  extensions: [smart]
