@@ -92,6 +92,13 @@ h1{
 	
 }
 
+#footer {
+	position: relative;
+	width: 180px;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+
 #header .avatar{
 	border: 1px solid #fff;
 	-webkit-border-radius: 5px;
