@@ -92,11 +92,16 @@ h1{
 	
 }
 
-#footer {
+#copyright {
 	position: relative;
-	width: 180px;
+	width: 70px;
 	font-family: Helvetica, sans-serif;
 	text-align: center;
+}
+
+#copyright p {
+	font-size: 10px;
+	color: #666;
 }
 
 #header .avatar{
