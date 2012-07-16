@@ -93,9 +93,9 @@ h1{
 }
 
 #copyright {
-	width: 80px;
 	font-family: Helvetica, sans-serif;
 	text-align: center;
+	margin-top: 80px;
 }
 
 #copyright p {
