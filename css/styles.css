@@ -93,14 +93,13 @@ h1{
 }
 
 #copyright {
-	position: relative;
-	width: 70px;
+	width: 80px;
 	font-family: Helvetica, sans-serif;
 	text-align: center;
 }
 
 #copyright p {
-	font-size: 10px;
+	font-size: 12px;
 	color: #666;
 }
 
