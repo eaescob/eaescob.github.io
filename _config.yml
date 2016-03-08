@@ -1,5 +1,5 @@
-markdown: rdiscount
 highlighter: pygments
+kramdown: rdiscount
 permalink: /blog/:title
 auto: true
 rdiscount:
