@@ -7,7 +7,7 @@ A lot of times I hear people say that they use recaptchaV2 as a way to mitigate 
 
 What does this mean? Well, if you have an application that replays clicking on recorded coordinates from a real browser, there is no way recaptchaV2 can solve this. In fact, let me just show you.
 
-== Bypassing recaptchaV2 ==
+h2. Bypassing recaptchaV2
 A quick bypass/automating recaptchaV2 solution is as easy as follows:
 
 * Apache web server
@@ -16,9 +16,9 @@ A quick bypass/automating recaptchaV2 solution is as easy as follows:
 
 You can set up an Apache web server running on http://localhost that loads a form that loads the recaptchaV2 widget and submits the response to a PHP script. The PHP script can receive the g-recaptcha-response parameter and send that via curl to the target URL with the rest of parameters that are needed to complete the action. 
 
->>>Google by default allows you to load recaptchaV2 widgets from localhost as a 'feature' for testing. There is no way to disable this.
+bq. Google by default allows you to load recaptchaV2 widgets from localhost as a 'feature' for testing. There is no way to disable this.
 
-=== Example ===
+h3. Example
 Let's say that you want to bypass the recaptchaV2 for http://www.targetsite.com/create_account.action endpoint. This action takes a few parameters such as:
 * username
 * password
@@ -29,7 +29,7 @@ Let's say that you want to bypass the recaptchaV2 for http://www.targetsite.com/
 
 What you can have is an Apache server serving an html file which loads the recaptchaV2 widget with:
 
-<blockquote>
+<% highlight html %}
 <html>
   <head>
     <title>reCAPTCHA demo: Simple page</title>
@@ -43,14 +43,14 @@ What you can have is an Apache server serving an html file which loads the recap
     </form>
   </body>
 </html>
-</blockquote>
+{% endhighlight %}
 
 Then you can have a script.php file set to receive the response as:
 {{{$response = $_POST['g-recaptcha-response']}}}
 
 What it can also do is pass the rest of the parameters to the target URL as:
 
-<blockquote>
+{% highlight php %}
 	$url = "https://www.targetsite.com/create_account.action";
 	$response = $_POST['g-recaptcha-response'];
 	$fields = array(
@@ -72,7 +72,7 @@ What it can also do is pass the rest of the parameters to the target URL as:
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
 	$result = curl_exec($ch);
 	curl_close($ch);
-</blockquote>
+{% endhighlight %}
 
 Bingo! That will submit a valid response to the target site with the rest of the parameters. When the target site sends the response to Google for verification, it'll receive a success of true and a hostname of 'localhost' because that's where the challenge was generated. If the site decides to perform hostname validation, then this attack will not work.
 
@@ -83,7 +83,7 @@ If the site decides to perform hostname validation, this is what you can do:
 * Have the PHP file send the response to another node (another VM) that then sends the parameters via curl.
 * Hostname validation bypassed.
 
-=== References ====
+h2. References
 [Google RecaptchaV2 Documentation](https://developers.google.com/recaptcha/intro)
 	
 
