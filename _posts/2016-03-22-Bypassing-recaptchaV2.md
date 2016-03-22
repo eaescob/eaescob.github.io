@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Security Tools Benchmarking
+title: Bypassing RecaptchaV2
 ---
 
 A lot of times I hear people say that they use recaptchaV2 as a way to mitigate bot traffic. We have tried the same and the results have not been pretty, just as I anticipated. RecaptchaV2 is meant to stop scripts from performing actions against an application but there is no way that a macro-recording application that is interacting with a real browser can be stopped. 
