@@ -7,7 +7,7 @@ A lot of times I hear people say that they use recaptchaV2 as a way to mitigate 
 
 What does this mean? Well, if you have an application that replays clicking on recorded coordinates from a real browser, there is no way recaptchaV2 can solve this. In fact, let me just show you.
 
-h2. Bypassing recaptchaV2
+# Bypassing recaptchaV2
 A quick bypass/automating recaptchaV2 solution is as easy as follows:
 
 * Apache web server
@@ -16,9 +16,9 @@ A quick bypass/automating recaptchaV2 solution is as easy as follows:
 
 You can set up an Apache web server running on http://localhost that loads a form that loads the recaptchaV2 widget and submits the response to a PHP script. The PHP script can receive the g-recaptcha-response parameter and send that via curl to the target URL with the rest of parameters that are needed to complete the action. 
 
-bq. Google by default allows you to load recaptchaV2 widgets from localhost as a 'feature' for testing. There is no way to disable this.
+> Google by default allows you to load recaptchaV2 widgets from localhost as a 'feature' for testing. There is no way to disable this.
 
-h3. Example
+## Example
 Let's say that you want to bypass the recaptchaV2 for http://www.targetsite.com/create_account.action endpoint. This action takes a few parameters such as:
 * username
 * password
@@ -83,7 +83,7 @@ If the site decides to perform hostname validation, this is what you can do:
 * Have the PHP file send the response to another node (another VM) that then sends the parameters via curl.
 * Hostname validation bypassed.
 
-h2. References
+# References
 [Google RecaptchaV2 Documentation](https://developers.google.com/recaptcha/intro)
 	
 
