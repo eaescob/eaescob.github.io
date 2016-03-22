@@ -36,8 +36,8 @@ What you can have is an Apache server serving an html file which loads the recap
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form action="'''script.php'''" method="POST">
-      <div class="g-recaptcha" data-sitekey="'''TARGET_SITE_KEY'''"></div>
+    <form action="**script.php**" method="POST">
+      <div class="g-recaptcha" data-sitekey="**TARGET_SITE_KEY**"></div>
       <br/>
       <input type="submit" value="Submit">
     </form>
