@@ -4,3 +4,4 @@ kramdown:
 gems:
   - jekyll-coffeescript
   - jekyll-paginate
+  - github-linguist
