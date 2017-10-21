@@ -46,9 +46,6 @@ What you can have is an Apache server serving an html file which loads the recap
 ```
 
 Then you can have a script.php file set to receive the response as:
-{{{$response = $_POST['g-recaptcha-response']}}}
-
-What it can also do is pass the rest of the parameters to the target URL as:
 
 ```php
 	$url = "https://www.targetsite.com/create_account.action";
