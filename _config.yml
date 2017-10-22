@@ -11,8 +11,8 @@ blog_theme: dark # Or use dark
 name: Emilio Escobar
 tagline: Your average security nerd
 about-description: >
-       Heading information security at (Hulu)[https://www.hulu.com], core developer of
-       (Ettercap)[http://www.ettercap-project.org]
+       Heading information security at <a href="https://www.hulu.com">Hulu</a>, core developer of
+       <a href="http://www.ettercap-project.org">Ettercap</a>
 pic: emilio.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
