@@ -17,7 +17,6 @@ pic: emilio.jpg  # Place a 200x200 picture inside /assets/img/ folder and provid
 
 # Contact links
 email: emilio@nullbytesec.com # Add your Email address
-phone: 044 825 5523 # Add your Phone number
 website: blog.nullbytesec.com # Add your website, do not add http://
 linkedin: emilioesc # Add your Linkedin handle
 github: eaescob # Add your Github handle
@@ -46,8 +45,5 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-assets
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
 include: [_pages]
