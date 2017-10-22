@@ -1,7 +1,51 @@
-kramdown:
-  input: GFM
-  hard_wrap: false
+title: Emilio Escobar
+description: > # this means to ignore newlines until "baseurl:"
+     Emilio Escobar's personal blog site. Read up on his rants
+     about information security and overall tech topics.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://blog.nullbytesec.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+blog_theme: dark # Or use dark
+
+# Profile information
+name: Emilio Escobar
+tagline: Your average security nerd
+about-description: Heading information security at Hulu, core developer of Ettercap
+pic: emilio.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+
+# Contact links
+email: emilio@nullbytesec.com # Add your Email address
+phone: 044 825 5523 # Add your Phone number
+website: blog.nullbytesec.com # Add your website, do not add http://
+linkedin: emilioesc # Add your Linkedin handle
+github: eaescob # Add your Github handle
+twitter: '@0xexfil' # Add your Twitter handle
+
+# Tracker
+analytics: UA-33385486-1
+
+# Comments
+discus-identifier: # Add your Disqus identifier
+
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 gems:
-  - jekyll-coffeescript
-  - jekyll-paginate
-  - github-linguist
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+include: [_pages]
