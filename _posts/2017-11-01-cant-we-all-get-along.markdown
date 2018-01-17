@@ -6,7 +6,7 @@ date: "2017-11-01 22:35:59 -0700"
 
 After watching [Jayson Street's](https://twitter.com/jaysonstreet) keynote at [SkyDogCon](https://www.youtube.com/watch?v=8iV8XQ1P9Co), it made it clear to me of the opportunity that the infosec community has right now. While things are not perfect (not that they'll ever be), businesses are paying more attention to their security programs and providing support to internal teams. This gives us (members of the community) a chance to really help make a change. And this is primarily around how we treat each other and allow newcomers to join and learn.
 
-> We've fought against the business to for years to listen to us. Now that it's happening, we've turned against each other?
+> We've fought against the business for years to listen to us. Now that we have their attention, we've decided to turn against each other?
 
 The best part of a community is diversity. Having a diverse group of people only brings the best thinking forward. Different upbringings, gender, religions, nationality, etc., only opens our minds even more as the difference of opinions, new ideas, or different train of thoughts expands our horizons as a collective unit. Those elements bring to the table all different kinds of ideas that if combined together, they can solve problems that until now have been deemed as unsolvable.
 
