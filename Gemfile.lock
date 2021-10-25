@@ -97,9 +97,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (>= 3.6.3)
+  jekyll (>= 3.9.1)
   jekyll-assets
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.15.1)
   tzinfo-data
 
 BUNDLED WITH
