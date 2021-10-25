@@ -42,7 +42,7 @@ exclude:
   - Gemfile.lock
   - README.md
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-assets
 
