@@ -11,13 +11,13 @@ blog_theme: dark # Or use dark
 name: Emilio Escobar
 tagline: Your average security nerd
 about-description: >
-       Heading information security at <a href="https://www.hulu.com" target='_blank'>Hulu</a>, core developer of
+       Heading security at <a href="https://www.datadoghq.com" target='_blank'>Datadog</a>, core developer of
        <a href="http://www.ettercap-project.org" target='_blank'>Ettercap</a>
 pic: emilio.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
 email: emilio@rage.cloud # Add your Email address
-website: blog.emilioesc.io # Add your website, do not add http://
+website: my.rage.cloud # Add your website, do not add http://
 linkedin: emilioesc # Add your Linkedin handle
 github: eaescob # Add your Github handle
 twitter: '@eaescob' # Add your Twitter handle
