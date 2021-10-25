@@ -17,7 +17,7 @@ gem "jekyll", ">= 3.9.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed",
+   gem "jekyll-feed", "~> 0.15.1"
    gem "jekyll-assets"
 end
 
