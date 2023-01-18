@@ -6,7 +6,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://rage.cloud" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
 blog_theme: dark # Or use dark
-time: 2023
 
 # Profile information
 name: Emilio Escobar
