@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
      Emilio Escobar's personal blog site. Read up on his rants
      about information security and overall tech topics.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://rage.cloud" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://eaesc.me" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
 blog_theme: dark # Or use dark
 
@@ -16,8 +16,8 @@ about-description: >
 pic: emilio.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
 # Contact links
-email: emilio@rage.cloud # Add your Email address
-website: emilioe.substack.com # Add your website, do not add http://
+email: emilio@eaesc.me # Add your Email address
+website: blog.thesecure.dev # Add your website, do not add http://
 linkedin: emilioesc # Add your Linkedin handle
 github: eaescob # Add your Github handle
 twitter: '@eaescob' # Add your Twitter handle
